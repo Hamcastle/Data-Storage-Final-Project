@@ -1,0 +1,49 @@
+---
+title: "DA 5020 Project Presentation"
+output:
+  revealjs::revealjs_presentation:
+    incremental: true
+    theme: black
+    transition: fade
+    slideNumber: true
+    center: true
+    # fig_width: 4
+    # fig_height: 4
+---	
+
+## Eye movements: 
+- We make them all the time (large eye movements many times a second)
+- May be a useful biometric source of information about the brain (task, health, etc)
+
+## Not that rich informationally on their own:
+- Better to align eye movements with models of visual content 
+
+##
+![salience_aligned_fixations](salience_aligned_fixations.png)
+
+## My goal:
+- 3 publically available data sets of eye movement made in response to different visual task
+- Store subject demographic, experimental trial information, eye movement behavior as specific, consistent variable names
+- Create records to align eye movement, _image_ of feature maps --> facilitate consistent gaze position sampling procedure
+
+## A dynamic example of our data in action:
+
+## {data-background-video="eye_demo.mp4"}
+
+##  {data-background-video="saliency_movie_export.m4v"}
+<!-- .slide: class="center" -->
+
+## But we're trying to branch out and apply our own methods for this stuff, too:
+
+## {data-background-video="davis_object_demo.m4v"}
+<!-- .slide: class="center" -->
+
+
+## Methods:
+- NoSQL: half our data is large image arrays --> need database scaling
+- Need to be able to move source images from storage by block, apply image feature extraction functions using fast vectorization
+- Store source images, maps together
+
+## Questions:
+- Storing all gaze data (x,y,time) together across subject/trials in one table? Many?
+- Image capture, processing for insertion into NoSQL db: suitable R library? Have to use python, shell script?
