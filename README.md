@@ -1,2 +1,2 @@
 # Data-Storage-Final-Project
-My final project for a data storage and management: a MongoDB database of eye movement data created using R.
+My final project for a data storage and management: a MongoDB database of eye movement data created using R. MongoDB (or really any other NoSQL based tool) turns out to be a useful and I think under-utilized option for storing experimental data with hierarchical structure like a lot of mine is. I can't post the actual data for this, as it comes from a mix of public sources with gated licenses, and from some of own my experiments where I don't have IRB clearance for data sharing. But you can see my pre-processing code, my process for creating the database, and the results. 10/10, would Mongo again. 
