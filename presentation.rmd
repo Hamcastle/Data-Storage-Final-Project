@@ -2,6 +2,7 @@
 title: "DA 5020 Project Presentation"
 output:
   revealjs::revealjs_presentation:
+    self_contained: true
     incremental: true
     theme: black
     transition: fade
@@ -19,7 +20,7 @@ output:
 - Better to align eye movements with models of visual content 
 
 ##
-![salience_aligned_fixations](salience_aligned_fixations.png)
+![salience_aligned_fixations](images/salience_aligned_fixations.png)
 
 ## My goal:
 - 3 publically available data sets of eye movement made in response to different visual task
